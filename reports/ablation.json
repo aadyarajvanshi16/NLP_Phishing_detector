@@ -1,0 +1,37 @@
+{
+  "rows": [
+    {
+      "variant": "A. letters only, URL -> 'urltoken'",
+      "in_distribution_auc": 0.991387650725519,
+      "email_to_sms_auc": 0.7683234099826626,
+      "sms_to_email_auc": 0.5939515020407713,
+      "cross_mean_auc": 0.6811374560117169,
+      "india_auc_info_only": 0.8
+    },
+    {
+      "variant": "B. + URL descriptors (shortener / IP / brand / TLD)",
+      "in_distribution_auc": 0.9913573139591925,
+      "email_to_sms_auc": 0.767475933023086,
+      "sms_to_email_auc": 0.5939588985183148,
+      "cross_mean_auc": 0.6807174157707004,
+      "india_auc_info_only": 0.8064
+    },
+    {
+      "variant": "C. + number, money, phone tokens",
+      "in_distribution_auc": 0.9923405544243938,
+      "email_to_sms_auc": 0.7317604252212794,
+      "sms_to_email_auc": 0.4530176475869349,
+      "cross_mean_auc": 0.5923890364041071,
+      "india_auc_info_only": 0.7616
+    },
+    {
+      "variant": "D. + both",
+      "in_distribution_auc": 0.9922669466115241,
+      "email_to_sms_auc": 0.7321539374030477,
+      "sms_to_email_auc": 0.4530326885501449,
+      "cross_mean_auc": 0.5925933129765963,
+      "india_auc_info_only": 0.7648
+    }
+  ],
+  "selected_by_cross_dataset_auc": "A. letters only, URL -> 'urltoken'"
+}

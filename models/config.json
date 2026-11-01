@@ -1,0 +1,11 @@
+{
+  "weight": 0.8,
+  "thr_suspicious": 0.305,
+  "thr_phishing": 0.569,
+  "rule_cap": 3,
+  "sklearn_version": "1.8.0",
+  "seed": 42,
+  "n_train": 13304,
+  "n_val": 4435,
+  "n_test": 4435
+}

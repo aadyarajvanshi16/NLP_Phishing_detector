@@ -1,0 +1,109 @@
+{
+  "n": 50,
+  "caveat": "Rules were written with knowledge of this set; only the model-only row is unbiased.",
+  "variants": {
+    "Model only (cutoff 0.5)": {
+      "accuracy": 0.64,
+      "ci95": [
+        0.5,
+        0.76
+      ],
+      "scam_recall": 0.4,
+      "false_alarm_rate": 0.12,
+      "precision": 0.7692307692307693
+    },
+    "Rules only (>= 1 red flag) [OPTIMISTIC - rules saw this set]": {
+      "accuracy": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "scam_recall": 1.0,
+      "false_alarm_rate": 0.0,
+      "precision": 1.0
+    },
+    "Hybrid, flagged (>= 0.305)": {
+      "accuracy": 0.84,
+      "ci95": [
+        0.74,
+        0.94
+      ],
+      "scam_recall": 1.0,
+      "false_alarm_rate": 0.32,
+      "precision": 0.7575757575757576
+    },
+    "Hybrid, strict (>= 0.569)": {
+      "accuracy": 0.72,
+      "ci95": [
+        0.6,
+        0.84
+      ],
+      "scam_recall": 0.48,
+      "false_alarm_rate": 0.04,
+      "precision": 0.9230769230769231
+    }
+  },
+  "auc": {
+    "model": 0.8079999999999999,
+    "rules": 1.0,
+    "hybrid": 0.9568
+  },
+  "mistakes": [
+    {
+      "kind": "FALSE ALARM",
+      "model": 0.4952601627944984,
+      "hybrid": 0.39620813023559875,
+      "flags": [],
+      "text": "Your OTP for login is 482916. Do not share this code with anyone. Valid for 10 minutes."
+    },
+    {
+      "kind": "FALSE ALARM",
+      "model": 0.806201362016591,
+      "hybrid": 0.6449610896132728,
+      "flags": [],
+      "text": "Your Swiggy order is out for delivery. Arriving in 15 minutes."
+    },
+    {
+      "kind": "FALSE ALARM",
+      "model": 0.5046685317896972,
+      "hybrid": 0.40373482543175776,
+      "flags": [],
+      "text": "Rs 1,250.00 debited from A/c XX4521 on 03-Oct at Zomato. Available balance Rs 18,340. If not you, call your bank branch."
+    },
+    {
+      "kind": "FALSE ALARM",
+      "model": 0.4604449214641554,
+      "hybrid": 0.3683559371713243,
+      "flags": [],
+      "text": "Your Amazon order has been shipped and will be delivered by Thursday. Track it in the Amazon app."
+    },
+    {
+      "kind": "FALSE ALARM",
+      "model": 0.4610324393042587,
+      "hybrid": 0.36882595144340696,
+      "flags": [],
+      "text": "Your Uber ride with Ramesh is arriving in 3 minutes. Vehicle: DL 3C XX 4821, white Swift Dzire."
+    },
+    {
+      "kind": "FALSE ALARM",
+      "model": 0.3832981406878565,
+      "hybrid": 0.30663851255028524,
+      "flags": [],
+      "text": "Hi, this is Dr. Sharma's clinic. Your reports are ready, you can collect them anytime after 4 PM."
+    },
+    {
+      "kind": "FALSE ALARM",
+      "model": 0.6114966091254568,
+      "hybrid": 0.48919728730036544,
+      "flags": [],
+      "text": "Can you send me the GitHub link for the Marauder project? I want to look at the code."
+    },
+    {
+      "kind": "FALSE ALARM",
+      "model": 0.38667582477915163,
+      "hybrid": 0.3093406598233213,
+      "flags": [],
+      "text": "Welcome to Delhi Metro. Your smart card balance is Rs 120. Recharge at any station or through the official app."
+    }
+  ]
+}

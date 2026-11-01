@@ -1,0 +1,189 @@
+{
+  "config": {
+    "weight": 0.8,
+    "thr_suspicious": 0.305,
+    "thr_phishing": 0.569,
+    "rule_cap": 3,
+    "sklearn_version": "1.8.0",
+    "seed": 42,
+    "n_train": 13304,
+    "n_val": 4435,
+    "n_test": 4435
+  },
+  "cross_dataset": {
+    "train_email_test_sms": {
+      "accuracy": 0.4302302696319622,
+      "precision": 0.15665873959571938,
+      "recall": 0.9008547008547009,
+      "f1": 0.2669030134211193,
+      "confusion": [
+        [
+          1659,
+          2837
+        ],
+        [
+          58,
+          527
+        ]
+      ]
+    },
+    "train_sms_test_email": {
+      "accuracy": 0.6084947054349734,
+      "precision": 0.47481060606060604,
+      "recall": 0.3901338313103019,
+      "f1": 0.42832735349393475,
+      "confusion": [
+        [
+          7894,
+          2773
+        ],
+        [
+          3919,
+          2507
+        ]
+      ]
+    }
+  },
+  "test": {
+    "model_only_0.5": {
+      "accuracy": 0.9632468996617812,
+      "precision": 0.9434502505368647,
+      "recall": 0.9400855920114123,
+      "f1": 0.9417649160414434,
+      "confusion": [
+        [
+          2954,
+          79
+        ],
+        [
+          84,
+          1318
+        ]
+      ]
+    },
+    "hybrid_flagged (>= suspicious)": {
+      "accuracy": 0.9388951521984217,
+      "precision": 0.857685009487666,
+      "recall": 0.9671897289586305,
+      "f1": 0.9091518605430774,
+      "confusion": [
+        [
+          2808,
+          225
+        ],
+        [
+          46,
+          1356
+        ]
+      ]
+    },
+    "hybrid_strict (>= phishing)": {
+      "accuracy": 0.9395715896279594,
+      "precision": 0.9796954314720813,
+      "recall": 0.8259629101283881,
+      "f1": 0.8962848297213623,
+      "confusion": [
+        [
+          3009,
+          24
+        ],
+        [
+          244,
+          1158
+        ]
+      ]
+    }
+  },
+  "test_by_source": {
+    "email": {
+      "accuracy": 0.9540801403919275,
+      "precision": 0.9134897360703812,
+      "recall": 0.9696498054474708,
+      "f1": 0.9407323518308796,
+      "confusion": [
+        [
+          2016,
+          118
+        ],
+        [
+          39,
+          1246
+        ]
+      ]
+    },
+    "sms": {
+      "accuracy": 0.8877952755905512,
+      "precision": 0.5069124423963134,
+      "recall": 0.9401709401709402,
+      "f1": 0.6586826347305389,
+      "confusion": [
+        [
+          792,
+          107
+        ],
+        [
+          7,
+          110
+        ]
+      ]
+    }
+  },
+  "auc_test": {
+    "model": 0.9906748543012126,
+    "hybrid": 0.9899495939341517
+  },
+  "top_phishing_terms": [
+    "click",
+    "http",
+    "com",
+    "free",
+    "save",
+    "email",
+    "info",
+    "mobile",
+    "remove",
+    "stop",
+    "reply",
+    "money",
+    "claim",
+    "online",
+    "software",
+    "site",
+    "low",
+    "best",
+    "viagra",
+    "order",
+    "offer",
+    "receive",
+    "guaranteed",
+    "quality",
+    "sex"
+  ],
+  "top_safe_terms": [
+    "enron",
+    "wrote",
+    "language",
+    "thanks",
+    "university",
+    "linguistics",
+    "url",
+    "attached",
+    "url urltoken",
+    "ok",
+    "urltoken date",
+    "edu",
+    "vince",
+    "enron com",
+    "going",
+    "yeah",
+    "users",
+    "english",
+    "gt",
+    "lor",
+    "louise",
+    "questions",
+    "meeting",
+    "lol",
+    "john"
+  ]
+}
